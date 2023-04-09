@@ -67,6 +67,8 @@ img {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    outline: 2px solid red;
+    outline-offset: -2px;
 }
 .logo {
     font-family: var(--secondary-font);
@@ -78,19 +80,24 @@ img {
     color: var(--primary-brand-color);
     text-decoration: none;
     margin-right: 76px;
+    
 }
 .logo-dark {
     color: var(--main-txt-color);
 }
 .logo-light {
     color: var(--light-bg-color);
+
 }
 
 /* header */
+.header {
+    border-bottom: 1px solid var(--accent-bg-color);
+}
 .header-container {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--accent-bg-color);
+
 }
 .header-nav {
     display: flex;
@@ -130,6 +137,7 @@ img {
 /* hero */
 .hero {
     background-color: var(--main-txt-color);
+    padding: 188px 0;
 }
 .hero-container {
     display: flex;
@@ -143,7 +151,8 @@ img {
     letter-spacing: 0.02em;
     line-height: 1.07;
     text-align: center;
-    padding: 188px 300px 48px;
+    max-width: 496px;
+    margin: auto;
 }
 .button {
     font-family: inherit;
@@ -159,23 +168,27 @@ img {
     padding: 16px 32px;
     margin: auto;
     margin-top: 48px;
-    margin-bottom: 188px;
     border: none;
+    min-width: 169px 
 }
 .button:hover,
 .button:focus {
     background-color: var(--pressed-state-color);
 }
 /* advantages */
+.advantages {
+    padding: 120px 0;
+}
 .advantages-container {
     display: flex;
     align-items: center;
-    padding-top: 120px;
-    padding-bottom: 120px; 
 }
 .advantages-list {
     display: flex;
-    gap: 24px;
+    gap: var(--indent);
+}
+.advantages-item {
+    width: calc((100% - (24px * 3)) / 4);
 }
 .title-header-two {
     color: var(--main-txt-color);
@@ -184,7 +197,7 @@ img {
     text-align: center;
     text-transform: capitalize;
     letter-spacing: 0.02em;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 .title-header-three {
     color: var(--main-txt-color);
@@ -192,25 +205,21 @@ img {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 /* directions-container */
-.directions-container {
-    margin-bottom: 120px;
+.our-directions {
+    padding-bottom: 120px;
 }
+
 .direction-list {
     display: flex;
     gap: var(--indent);
 }
 /* team */
-.team-container {
-    padding-bottom: 120px;
-}
-.team .title-header-two {
-    padding-top: 120px;
-}
 .team {
     background-color: var(--light-bg-color);
+    padding: 120px 0;
 }
 .team-list {
     background-color: var(--accent-txt-color);
@@ -221,33 +230,36 @@ img {
 .team-item {
     background-color: var(--accent-txt-color);
     width: calc((100% - (24px * 3)) / 4);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
 }
 
 .team-title {
     padding: 32px 16px;
     text-align: center;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /* footer */
 .footer {
     background-color: var(--main-txt-color);
+    padding: 100px 0;
 }
 .footer-text {
     color: var(--light-bg-color);
 }
-.footer-container {
-padding: 100px 879px 100px 15px;
-}
+
 .footer-text {
-    padding-top: 16px;
+    max-width: 264px
+}
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 
 /* portfolio */
-.project-container {
-    margin-bottom: 120px;
+.project {
+    padding: 96px 0 120px;
 }
 
 .project-list {
@@ -264,8 +276,7 @@ padding: 100px 879px 100px 15px;
     display: flex;
     justify-content: center;
     gap: var(--indent);
-    padding-top: 96px;
-    padding-bottom: 72px;
+    margin-bottom: 72px
 }
 
 .button-filter {
@@ -286,6 +297,7 @@ padding: 100px 879px 100px 15px;
     background-color: var(--pressed-state-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     color: var(--accent-txt-color);
+    border: 1px solid transparent;
 }
 .title-filter-container {
     padding: 32px 16px 32px 16px;
