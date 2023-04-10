@@ -270,7 +270,6 @@ img {
 }
 .project-item {
     width: calc((100% - (24px * 2)) / 3);
-  
 }
 
 .filters-list {
