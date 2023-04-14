@@ -67,8 +67,7 @@ img {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: 2px solid red;
-    outline-offset: -2px;
+
 }
 .logo {
     font-family: var(--secondary-font);
@@ -79,8 +78,9 @@ img {
     text-transform: uppercase;
     color: var(--primary-brand-color);
     text-decoration: none;
-    margin-right: 76px;
-    
+}
+.header-logo {
+    margin-right: 76px; 
 }
 .logo-dark {
     color: var(--main-txt-color);
@@ -105,7 +105,6 @@ img {
 }
 .header-nav-list {
     display: flex;
-    padding: 24px;
     gap: 40px;  
     margin: 0;
 }
@@ -216,13 +215,15 @@ img {
     display: flex;
     gap: var(--indent);
 }
+.direction-item {
+    width: calc((100% - (24px * 2)) / 3);    
+}
 /* team */
 .team {
     background-color: var(--light-bg-color);
     padding: 120px 0;
 }
 .team-list {
-    background-color: var(--accent-txt-color);
     display: flex;
     flex-wrap: wrap;
     gap: var(--indent);
